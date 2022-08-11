@@ -12,7 +12,7 @@ inline:
   components:
     - name: che-code-runtime-description
       container:
-        image: quay.io/azatsary/che-code:ubi8-pwrsh
+        image: quay.io/azatsary/ubi8:pwrsh
         command:
           - /checode/entrypoint-volume.sh
         volumeMounts:
@@ -61,7 +61,7 @@ inline:
       volume: {}
     - name: che-code-injector
       container:
-        image: quay.io/che-incubator/che-code:insiders
+        image: quay.io/azatsary/che-code:no-machine-exec
         command: ["/entrypoint-init-container.sh"]
         volumeMounts:
           - name: checode
