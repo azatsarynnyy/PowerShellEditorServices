@@ -12,7 +12,7 @@ inline:
   components:
     - name: che-code-runtime-description
       container:
-        image: quay.io/azatsary/che-code:ubi8-pwrsh
+        image: quay.io/azatsary/ubi8:pwrsh
         command:
           - /checode/entrypoint-volume.sh
         volumeMounts:
