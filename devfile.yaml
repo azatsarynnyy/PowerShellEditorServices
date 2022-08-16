@@ -1,8 +1,8 @@
 schemaVersion: 2.1.0
 metadata:
-  name: pwr-shell
+  name: pwr-shell-no-machine-exec
 components:
   - name: tools
     container:
-      image: quay.io/azatsary/che-code:ubi8-pwrsh
+      image: quay.io/azatsary/ubi8:pwrsh
       memoryLimit: 3Gi
